@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Concert+One&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Pangolin&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     list-style-type: none;
+}
+a{
+    color: #4070f4;
+    text-decoration: none;
+
 }
 html ,body{
     height: 100%;
@@ -15,33 +22,36 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .holder{
     max-width: 1000px;
     width: 100%;
-    max-height: 700px;
+    max-height: 800px;
     height: 100%;
     padding: 10px;
     display: flex;
 }
 .container{
-    width: 40%;
+    width: 400px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative; 
+    flex-wrap: wrap;
+    /* background-color: red; */
+
 }
 .p2{
-    color: #727277;
     text-align: center;
-    font-size: 30px;
+    font-size: 3em;
     font-weight: 600;
 }
 .company-logo{
     width: 100%;
-    transform: translateY(-150px);
+    /* transform: translateY(-150px); */
+    margin-bottom: 10px ;
 }
 .main-logo{
     width: 80px;
@@ -56,9 +66,9 @@ body{
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 .p{
-    font-size: 23px;
+    font-size: 1.4em;
     color: #727277;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
 }
 .main-logo img{
@@ -70,8 +80,7 @@ body{
     height: auto;
     border-radius: 20px;
     margin: 10px 0px;
-    position: absolute;
-    bottom: 10px;
+    
     background-color: rgba(225,225,225,.01);
     box-shadow: 2px 2px 20px rgba(0,0,0,0.01);
     margin-top: 0px;
@@ -80,14 +89,19 @@ body{
 .p3{
     font-size: 1.3em;
     padding-bottom: 10px;
+    font-weight: 600;
 }
 .p4{
     color: #727277  ;
     padding-bottom: 15px;
 }
+.already{
+    color: #727277;
+    padding: 5px 0px;
+}
 button{
     width: 100%;
-    height: 50px;
+    height: 42.5px;
     margin: 7.5px 0px;
     border: .5px solid rgba(225,225,225,.1);
     background-color: transparent;
@@ -97,7 +111,8 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+   font-weight: bold;
+   cursor: pointer;
 }
 .b1{
     background-color: #2C2B38;
@@ -192,4 +207,11 @@ button i{
     .con2{
         display: none;
     }
+    button{
+        cursor: auto;
+    }
+}
+.span{
+    color: #727277;
+    font-size: smaller;
 }
