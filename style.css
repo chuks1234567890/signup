@@ -418,3 +418,62 @@ input[type="radio"]:checked{
         height: 10px;
     }
 }
+/* .phone-email{
+    display:flex;
+}
+.phone-email button{
+    outline: none;
+    height: 26px;
+    margin: 0px;
+    padding: 7px 0px;
+    width: 100px;
+    border: 1px solid #4070f4;
+}
+.phone-email button.active{
+    margin-right: 5px;
+    background-color: #4070f4;
+    color: #fff;
+} */
+ .cop{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(225,225,225,.07);
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+ }
+.cop .co{
+    width: 49.5%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: small;
+    font-weight: 600;
+}
+.ciphone{
+    height: 47px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.ci select{
+    padding: 5px;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    height: 100%;
+    border-radius: 10px;
+}
+.ciphone input{
+    width: calc(100% - 75px);
+    margin: 0px;
+    height: 100%;
+}
+.co.active{
+    background-color: #0b0b0b;
+}
