@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Concert+One&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Pangolin&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=League+Spartan:wght@100..900&display=swap');
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
     font-family: "Bricolage Grotesque", sans-serif;
+    font-family: flow circular;
     list-style-type: none;
 }
 a{
@@ -142,6 +144,7 @@ button i{
 .con2{
     padding: 15px;
     width: 60%;
+    
 }
 .random-stuff{
     width: 100%;
