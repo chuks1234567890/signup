@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Concert+One&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Pangolin&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=League+Spartan:wght@100..900&display=swap');
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
     font-family: "Bricolage Grotesque", sans-serif;
-    font-family: flow circular;
+    /* font-family: flow circular; */
     list-style-type: none;
 }
 a{
@@ -27,12 +27,13 @@ body{
     /* overflow: hidden; */
 }
 .holder{
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     max-height: 800px;
     height: 100%;
     padding: 10px;
     display: flex;
+    justify-content: space-between;
 }
 .container{
     width: 400px;
@@ -50,6 +51,7 @@ body{
     font-size: 3em;
     font-weight: 600;
 }
+
 .company-logo{
     width: 100%;
     /* transform: translateY(-150px); */
@@ -142,10 +144,14 @@ button i{
     color: rgba(225,225,225,.7);
 }
 .con2{
-    padding: 15px;
+    /* padding: 15px; */
+    /* max-width: 500px; */
     width: 60%;
+    opacity: 1;
+    transition: .4s;
     
 }
+
 .random-stuff{
     width: 100%;
     height: 100%;
@@ -199,6 +205,11 @@ button i{
     opacity: 0.4;
     background-color: rgba(0,0,0,0.3);
 }
+@media screen and (min-width:824px) {
+    .skip{
+        display: none;
+    }
+}
 @media screen and (max-width:824px){
     .holder{
         justify-content: center;
@@ -207,8 +218,23 @@ button i{
     .container{
         width: 100%;
     }
+    
     .con2{
-        display: none;
+        position: absolute;
+        z-index: 10;
+        background-color: #0b0b0b;
+        height: 100%;
+        max-width: 450px;
+        width: 100%;
+        top: 0px;
+    }
+    .con2 .show-moves{
+        position: absolute;
+        margin: 0 auto;
+        width: 100px;
+        height: 60px;
+        background-color: red;
+        bottom: 15px;
     }
     button{
         cursor: auto;
@@ -479,4 +505,82 @@ input[type="radio"]:checked{
 }
 .co.active{
     background-color: #0b0b0b;
+}
+.con2 .slide-holder{
+    /* max-width: 500px; */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    /* overflow-x: scroll; */
+    overflow: hidden;
+}
+.slide-holder ul{
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    transition: .5s;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.slide-holder li{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    /* background-color: rgba(225,225,225,.05); */
+    /* border: 1px solid #fff; */
+    border: 10px solid #0b0b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.slide-holder .skip{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: auto;
+    transition: .2s;
+    padding: 5px 15px;
+    border-radius: 20px;
+    width: 100px;
+    z-index: 10;
+}
+.skip:hover{
+    background-color: #2C2B38;
+}
+*::-webkit-scrollbar{
+    height: 10px;
+    background-color: rgba(225,225,225,.1);
+    display: none;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+.slide-details{
+    width: 100%;
+    height:auto;
+}
+.image-description{
+    max-width: 300px;
+    height: 300px;
+    background-color:rgba(225,225,225,.1);
+    border-radius: 10px;
+    margin: auto;
+}
+.a-head{
+    font-size: 2em;
+    color: #fff;
+    font-weight: 1000;
+    text-align: center;
+    margin: 10px 0px;
+}
+.a-body{
+    color: #999;
+    font-size: 15px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    font-weight: 600;
 }
